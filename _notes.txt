@@ -1,0 +1,20 @@
+use heroku? to host the app 
+
+Mozart - Requiem
+https://www.youtube.com/watch?v=Zi8vJ_lMxQI
+https://www.youtube.com/watch?v=ZNwz6wj1yRs
+
+
+bs
+- use bs modals
+- use carousel
+- use a video with bs code
+- use alerts
+
+- form, and modify and other form components
+- floating labels
+- use a placeholder for card, skeleton
+- toasts
+- tooltip
+
+<end>

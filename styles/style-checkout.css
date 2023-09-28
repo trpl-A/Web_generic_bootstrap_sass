@@ -1,0 +1,61 @@
+/* :root {} */
+
+
+/* HEADER */
+.overlay {
+    opacity: 0.9;
+}
+
+header {
+    background-image: url("./images/bag\ \(1\).jpg");
+}
+
+header h1 {
+    border: 3px solid white;
+    text-align: center;
+    margin: 0 15px;
+
+}
+
+/* FORM */
+.form {
+    background-color: black;
+    padding: 20px;
+}
+
+/* sections */
+.form section {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(203, 160, 2);
+    border-radius: 30px;
+}
+
+section h2 {
+    color: black;
+    padding: 10px 0 20px 0;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+
+.form #confirmation {
+    border-radius: 20px;
+}
+
+#confirmation a {
+    color: white;
+}
+
+#confirmation a:hover {
+    background-color: black;
+    padding: 5px;
+}
+
+
+/* BUTTON */
+#submit {
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 20px;
+}

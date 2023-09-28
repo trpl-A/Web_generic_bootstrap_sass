@@ -1,0 +1,30 @@
+/* NAVBAR */
+nav {
+  --max-z-index: 100;
+  z-index: var(--max-z-index);
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+nav .offcanvas {
+  background-color: black;
+}
+nav .offcanvas .offcanvas-title {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+}
+nav .offcanvas .nav-link {
+  /* font-family: 'Zeyada', cursive; */
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: white;
+  /* color: black; */
+  transition: ease 400ms;
+  cursor: pointer;
+}
+nav .offcanvas .nav-link:hover {
+  /* color: white; */
+  color: yellow;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,50 @@
+/* NAVBAR */
+nav {
+    --max-z-index: 100;
+    z-index: var(--max-z-index);
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+
+    // BOOTSTRAP
+    // burger btn
+    // .navbar-toggler {
+    //     background-color: blue;
+    // }
+    button {
+        background-color: blue;
+    }
+
+    // side nav
+    .offcanvas {
+        background-color: black;
+
+        // .offcanvas-header {}
+
+        .offcanvas-title {
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 800;
+            font-size: 25px;
+        }
+
+        .nav-link {
+            /* font-family: 'Zeyada', cursive; */
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 500;
+
+            color: white;
+            /* color: black; */
+            transition: ease 400ms;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            /* color: white; */
+            color: yellow;
+        }
+    }
+
+
+}

@@ -1,0 +1,40 @@
+/* HEADER */
+header h1 {
+    font-family: 'Zeyada';
+}
+
+
+/* MAIN */
+main {
+    background-color: whitesmoke;
+    /* border-top: 1px solid white; */
+    /* border-bottom: 1px solid white; */
+}
+
+main h2 {
+    font-size: 70px;
+    font-family: 'Zeyada';
+    padding: 20px 10px;
+}
+
+/* image */
+main img {
+    padding: 12px;
+    /* width: 200px;
+    height: 200px;
+    object-fit: cover; */
+
+    /* filter: sepia(); */
+    /* filter: opacity(0.7); */
+    /* filter: grayscale(); */
+    transition: 800ms ease;
+    /* cursor: pointer; */
+}
+
+main img:hover {
+    transform: scale(0.9);
+    filter: none;
+    /* border-radius: 30px; */
+    /* border: 3px solid black; */
+    /* padding: 0; */
+}

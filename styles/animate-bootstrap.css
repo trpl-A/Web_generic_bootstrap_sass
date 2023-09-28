@@ -1,0 +1,29 @@
+@keyframes shadow {
+    0% {
+        box-shadow: 1px 5px 0px blue;
+    }
+
+    20% {
+        box-shadow: 1px 5px 10px blue;
+    }
+
+    40% {
+        box-shadow: 1px 5px 20px blue;
+    }
+
+    60% {
+        box-shadow: 5px 5px 20px blue;
+    }
+
+    80% {
+        box-shadow: 10px 5px 10px blue;
+    }
+
+    100% {
+        box-shadow: 1px 5px 2px blue;
+    }
+}
+
+.card {
+    animation: shadow 10s ease infinite;
+}

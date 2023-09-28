@@ -1,0 +1,22 @@
+@media screen and (max-width: 580px) {
+    /* header {
+        background-color: black;
+    } */
+
+    section {
+        margin: 10px 20px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    section table {
+        width: 300px;
+
+    }
+
+    table input {
+        width: 80px;
+    }
+}

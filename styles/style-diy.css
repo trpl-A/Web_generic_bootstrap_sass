@@ -1,0 +1,111 @@
+/* HEADER */
+header {
+    height: 30vh;
+}
+
+
+/* MAIN */
+main {
+    background: radial-gradient(white, blue);
+    /* background-color: aqua; */
+    min-height: 70vh;
+}
+
+
+/* form */
+main form {
+    padding: 40px 20px;
+    background-color: black;
+    width: 320px;
+
+    border-radius: 5%;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 100;
+
+    transition: 400ms ease-in;
+}
+
+main form:hover {
+    box-shadow: 1px 1px 20px blue;
+}
+
+
+
+/* input */
+::placeholder {
+    color: aqua;
+}
+
+main input {
+    display: block;
+    margin: 10px 0 30px 0;
+    padding: 5px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+
+    width: 260px;
+    text-align: center;
+    outline: none;
+    border: none;
+    /* border-left: 1px solid white; */
+    border-bottom: 1px solid darkslategray;
+    /* width: 100px; */
+    transition: 400ms ease;
+}
+
+main input:focus {
+    border-bottom: 1px solid white;
+    border-left: none;
+    width: 260px;
+}
+
+
+main textarea {
+    text-align: center;
+
+    width: 260px;
+    height: 100px;
+    outline: none;
+    font-family: sans-serif;
+    display: block;
+    padding: 10px 5px;
+    margin: 10px 0 40px 0;
+
+    background: transparent;
+
+
+    transition: 400ms ease-in;
+}
+
+
+main textarea:hover,
+textarea:focus {
+    border-color: white;
+    background: white;
+    color: black;
+}
+
+/* BUTTON */
+main button {
+    border: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+
+    transition: 600ms ease;
+    cursor: pointer;
+}
+
+main button:hover,
+main button:focus {
+    background-color: aqua;
+    color: black;
+    box-shadow: 1px 1px 10px blue;
+}

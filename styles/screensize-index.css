@@ -1,0 +1,17 @@
+@media screen and (max-width:500px) {
+    main .container {
+        /* padding: 10px; */
+        width: 380px;
+    }
+
+
+    main .image {
+        background-color: orange;
+        padding: 10px;
+    }
+
+    /* image */
+    main img {
+        width: 340px;
+    }
+}
