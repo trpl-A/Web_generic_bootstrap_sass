@@ -5,6 +5,16 @@ https://www.youtube.com/watch?v=Zi8vJ_lMxQI
 https://www.youtube.com/watch?v=ZNwz6wj1yRs
 
 
+add validation to form
+add calculations to form
+add a way of storing the data from the form 
+add some bs components (modals, alerts, use a placeholder for card, skeleton, toasts, tooltip)
+---
+
+find or create a business icon
+add a custom icon
+---
+
 bs
 - use bs modals
 - use carousel
