@@ -8,9 +8,10 @@
 - Creator:      trpl-A
 - Started:      02.05.23 
 - Updated:      28.09.23
-- Status:       > COMPLETE
-                > connected to github? yes
-                > using git? yes
+- Status:       
+    * work-in-progress
+    * connected to github? yes
+    * using git? yes
 ---
 
 ## More notes
@@ -39,14 +40,14 @@
 ---------------------------
 
 ### Webpages
-    - #### Direct
+    - Direct
         * index.html
         * about.html
         * brick-and-mortar.html
         * diy-methods.html
         * shop-now.html
 
-    - #### Indirect
+    - Indirect
         * 404.html
         * checkout.html
         * terms-of-service.html
