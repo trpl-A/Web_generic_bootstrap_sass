@@ -7,8 +7,7 @@ header h1 {
 /* MAIN */
 main {
     background-color: whitesmoke;
-    /* border-top: 1px solid white; */
-    /* border-bottom: 1px solid white; */
+    margin-bottom: 5vh;
 }
 
 main h2 {
@@ -38,3 +37,19 @@ main img:hover {
     /* border: 3px solid black; */
     /* padding: 0; */
 }
+
+/* ========================================== */
+
+/* modal input */
+#qty {
+    color: orange;
+}
+
+/* ========================================== */
+#go-to-checkout button {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+/* ========================================== */

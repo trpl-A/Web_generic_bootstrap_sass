@@ -16,18 +16,28 @@ header h1 {
     margin: 0 15px;
 }
 
+/* ============================================ */
+
 
 /* MAIN */
 main {
     background-color: lightgrey;
 }
 
+/* ============================================ */
 
 /* containers */
 main .container {
-    padding: 10px;
+    padding: 5vh 10px;
     min-height: 100vh !important;
     /* border-radius: 20px; */
+}
+
+main #center-diff {
+    padding: 5vh 10px;
+    min-height: 300px !important;
+    /* display: flex;
+    justify-content: center; */
 }
 
 /* -container1 */
@@ -71,11 +81,22 @@ p {
     text-align: center;
 }
 
+/* ============================================ */
 
+#center-diff1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* #center-diff2 {
+    width: 60%;
+} */
+
+/* ============================================ */
 /* BUTTONS */
 /* -container2 */
 .btn-link {
-    margin: 5vh 0;
+    margin: 10vh 0;
     text-decoration: none;
 }
 

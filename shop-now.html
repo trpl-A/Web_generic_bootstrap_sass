@@ -9,7 +9,7 @@
     <title>Shop Now</title>
 
     <!-- favicon -->
-    <link rel="icon" type="icon" href="./icons/logo.png">
+    <link rel="icon" type="icon" href="./icons/business/leather.png">
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
@@ -49,33 +49,6 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">Nkwali Yenkosi</a>
 
-            <!-- add social media logos -->
-            <div class="social-media center">
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                            <img class="icons" src="./icons/socials/ig.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href=" https://www.facebook.com" target="_blank">
-                            <img class="icons" src="./icons/socials/fb.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com" target="_blank">
-                            <img class="icons" src="./icons/socials/tk.png" alt="">
-                        </a>
-                    </li>
-                    <!-- twitter -->
-                    <li>
-                        <a href="https://www.tiktok.com" target="_blank">
-                            <img class="icons" src="./icons/socials/twitter.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -87,7 +60,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nkwali Yenkosi</h5>
+                    <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nkwali Yenkosi</h5> -->
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -119,15 +92,63 @@
         <h1>Shop Now</h1>
     </header>
 
+    <!-- Button trigger modal -->
+    <script>
+        let itemName
+
+        const items = {}
+
+        function setItem(inItem) {
+            itemName = inItem
+        }
+        function getItem() {
+            return itemName
+        }
+
+
+        function addToCart() {
+            let quantity = document.getElementById("qty")
+            quantity.innerText = ""
+            items[getItem()] = Number.parseInt(quantity.value)
+
+            // display 
+            console.log(quantity.value)
+            window.alert("Item added to cart")
+            console.log(items)
+            // console.log(getItem())
+        }
+    </script>
+
+    <!-- btn btn-primary -->
+    <!-- <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Buy product
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add to cart</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <input id="qty" type="number" placeholder="Enter number of items">
+                    <!-- <button type="button">Add to cart</button> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" onclick="addToCart()" class="btn btn-primary" data-bs-dismiss="modal">Add to
+                        cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- MAIN -->
-    <!-- <style>
-        main h2 {
-            font-size: 50px;
-            font-family: 'Zeyada';
-            padding: 10px;
-        }
-    </style> -->
     <main class="">
         <div class="center">
             <h2>Shop Now</h2>
@@ -136,35 +157,49 @@
         <!-- row1 -->
         <section class="center">
             <div class="card-group">
+                <!-- item1 -->
                 <div class="card" style="width: 18rem;">
                     <img src="./styles/images/Style-05_female-02-Double-breasted.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Double breasted (female)</h5>
                         <p class="card-text">R2000</p>
                         <div class="center">
-                            <button>Buy product</button>
+                            <button onclick="setItem('item1')" type="button" class="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy product
+                            </button>
                         </div>
                     </div>
                 </div>
 
+                <!-- item2 -->
                 <div class="card" style="width: 18rem;">
                     <img src="./styles/images/bag (1).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Bag</h5>
                         <p class="card-text">R2 500</p>
+                        <!-- button -->
                         <div class="center">
-                            <button>Buy product</button>
+                            <button onclick="setItem('item2')" type="button" class="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy product
+                            </button>
                         </div>
                     </div>
                 </div>
 
+                <!-- item3 -->
                 <div class="card" style="width: 18rem;">
                     <img src="./styles/images/bag (2).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Bag</h5>
                         <p class="card-text">R2 000</p>
+                        <!-- button -->
                         <div class="center">
-                            <button>Buy product</button>
+                            <button onclick="setItem('item3')" type="button" class="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy product
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -245,6 +280,12 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <a id="go-to-checkout" class="center" href="./checkout.html">
+                <button>Go to checkout page</button>
+            </a>
         </section>
     </main>
 

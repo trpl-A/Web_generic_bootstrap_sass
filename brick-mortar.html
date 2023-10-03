@@ -8,7 +8,7 @@
     <title>Brick and Mortar</title>
 
     <!-- favicon -->
-    <link rel="icon" type="icon" href="./icons/logo.png">
+    <link rel="icon" type="icon" href="./icons/business/leather.png">
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
@@ -28,11 +28,14 @@
         rel="stylesheet">
 
 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./styles/my-bootstrap.css">
+
     <!-- my-styles -->
-    <link rel="stylesheet" href="./styles/style-brick.css">
     <link rel="stylesheet" href="./styles/common-main.css">
     <link rel="stylesheet" href="./styles/common1.css">
-    <link rel="stylesheet" href="./styles/my-bootstrap.css">
+
+    <link rel="stylesheet" href="./styles/style-brick.css">
 
     <!-- SASS -->
     <link rel="stylesheet" href="./styles/main.css">
@@ -43,34 +46,6 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">Nkwali Yenkosi</a>
 
-            <!-- add social media logos -->
-            <div class="social-media center">
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank">
-                            <img class="icons" src="./icons/socials/ig.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href=" https://www.facebook.com" target="_blank">
-                            <img class="icons" src="./icons/socials/fb.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com" target="_blank">
-                            <img class="icons" src="./icons/socials/tk.png" alt="">
-                        </a>
-                    </li>
-                    <!-- twitter -->
-                    <li>
-                        <a href="https://www.tiktok.com" target="_blank">
-                            <img class="icons" src="./icons/socials/twitter.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
                 aria-label="Toggle navigation">
@@ -80,11 +55,7 @@
             <!-- offcanvas -->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
                 aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nkwali Yenkosi</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
+
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
@@ -109,25 +80,63 @@
     </nav>
 
     <!-- HEADER -->
-    <header class="center">
-        <h1>Brick and Mortar</h1>
+    <header class="full-bg-img ">
+        <div class="overlay center">
+            <h1>Brick and Mortar</h1>
+        </div>
     </header>
 
     <!-- MAIN -->
     <main>
         <section>
             <!-- images of premises -->
+            <div class="center">
+                <div class="card-group">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./styles/images/b1.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="./styles/images/business5.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="./styles/images/business1.jpg" class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container map center">
+            <!-- map -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4482.035700731043!2d18.380112274442883!3d-33.95157881548777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6653756d46b9%3A0x310788af50afb3fb!2sCamps%20Bay%20Beach!5e0!3m2!1sen!2sza!4v1695278437361!5m2!1sen!2sza"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
     </main>
 
-    <div class="container map center">
-        <!-- map -->
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4482.035700731043!2d18.380112274442883!3d-33.95157881548777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6653756d46b9%3A0x310788af50afb3fb!2sCamps%20Bay%20Beach!5e0!3m2!1sen!2sza!4v1695278437361!5m2!1sen!2sza"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="contact-details" class="center">
+            <div class="contact">
+                <p>Email: </p>
+                <p>Phone number: </p>
+                <p>Website: </p>
+                <p>Address: </p>
+            </div>
+
+            <div class="contact contact-info">
+                <p>FoodAndFitness@gmail.com</p>
+                <p>+27 000 000 001</p>
+                <p>FoodAndFitness.com</p>
+                <p>3301 Sweet Scent Street, Sugar Rush</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

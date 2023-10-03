@@ -1,22 +1,14 @@
 /* HEADER */
-header {
-    height: 30vh;
-    background-color: black;
-}
-
 
 /* MAIN */
-main .container {
-    height: 100vh;
-    width: 100%;
-    /* background-color: whitesmoke; */
+main {
     background-image: url("./images/home-img\ \(2\).jpg");
 }
 
 /* @override */
 .overlay {
     opacity: 0.9;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .overlay div {

@@ -11,9 +11,20 @@ add a way of storing the data from the form
 add some bs components (modals, alerts, use a placeholder for card, skeleton, toasts, tooltip)
 ---
 
-find or create a business icon
-add a custom icon
+maybe create a cordova app based on/from this project
 ---
+
+once buy btn is clicked, open a small window with inputs (300x300), number input, display subtotal
+---
+
+add screenshots to documentation folder
+add more docs to documentation folder 
+---
+
+complete
+index, about, terms of service, checkout (design and functionality)
+---
+
 
 bs
 - use bs modals

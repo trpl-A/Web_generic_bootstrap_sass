@@ -7,7 +7,7 @@
 
 - Creator:      trpl-A
 - Started:      02.05.23 
-- Updated:      28.09.23
+- Updated:      29.09.23
 - Status:       
     * work-in-progress
     * connected to github? yes
@@ -25,6 +25,7 @@
 - Secondary
     * aqua/ light blue
     * light grey
+    * brown, olive
 
 - Custom google fonts
     * font1, main font

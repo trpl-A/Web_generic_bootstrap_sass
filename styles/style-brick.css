@@ -1,0 +1,47 @@
+/* HEADER */
+.overlay {
+    opacity: 0.9;
+}
+
+header {
+    background-image: url("./images/business2.jpg");
+    background-color: transparent;
+}
+
+
+/* MAIN */
+main section {
+    min-height: 100vh;
+}
+
+/* section .center {
+    height: 100vh;
+} */
+
+
+
+/* @Override */
+.card {
+    box-shadow: none;
+    width: 300px;
+    height: 450px;
+    /* background-color: black; */
+
+    margin: 30px;
+    border: none;
+    border-radius: 0px;
+    transition: 700ms ease;
+}
+
+
+.card-group img {
+    /* width: 300px; */
+    height: 450px;
+    border-radius: 0px;
+}
+
+/*======================================== */
+
+iframe {
+    width: 80vw;
+}
