@@ -1,3 +1,13 @@
+:root {
+    --bg: rgb(45, 4, 4);
+}
+
+/* BODY */
+body {
+    background-color: var(--bg);
+}
+
+
 /* HEADER */
 header h1 {
     font-family: 'Zeyada';
@@ -6,7 +16,8 @@ header h1 {
 
 /* MAIN */
 main {
-    background-color: whitesmoke;
+    background-color: var(--bg);
+    /* box-shadow: inset 1px 1px 20px black; */
     margin-bottom: 5vh;
 }
 
@@ -14,6 +25,7 @@ main h2 {
     font-size: 70px;
     font-family: 'Zeyada';
     padding: 20px 10px;
+    color: white;
 }
 
 /* image */
@@ -30,13 +42,13 @@ main img {
     /* cursor: pointer; */
 }
 
-main img:hover {
+/* main img:hover {
     transform: scale(0.9);
     filter: none;
     /* border-radius: 30px; */
-    /* border: 3px solid black; */
-    /* padding: 0; */
-}
+/* border: 3px solid black; */
+/* padding: 0; 
+} */
 
 /* ========================================== */
 
@@ -47,9 +59,19 @@ main img:hover {
 
 /* ========================================== */
 #go-to-checkout button {
-    background-color: blue;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 20px;
+}
+
+#go-to-checkout button:hover {
+    box-shadow: 1px 1px 10px white;
+}
+
+/* ========================================== */
+.card button {
+    border-radius: 50%;
+    padding: 22px;
 }
 
 /* ========================================== */

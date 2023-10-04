@@ -19,6 +19,48 @@ a {
 }
 
 /* ======================================= */
+/* NAVBAR */
+nav {
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+    position: sticky;
+    top: 0;
+    /* z-index: 100; */
+    --max-z-index: 100;
+    z-index: var(--max-z-index);
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 10px;
+    transition: 400ms ease-out;
+}
+
+nav .list-login-signup a {
+    color: lightblue;
+}
+
+nav a {
+    /* font2 */
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Zeyada', cursive; */
+    font-weight: 500;
+
+    color: white;
+    /* color: black; */
+    transition: ease 400ms;
+    cursor: pointer;
+}
+
+nav a:hover {
+    /* color: white; */
+    color: yellow;
+}
+
+
+/* ======================================= */
 
 /* HEADER */
 header {
@@ -29,6 +71,7 @@ header {
 
 header h1 {
     font-family: 'Zeyada', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
     font-weight: 100;
     font-size: 100px;
     text-align: center;
@@ -86,12 +129,12 @@ footer .icons:hover {
     transform: scale(1.2);
 }
 
-footer #icon-ig {
+#icon-ig {
     width: 70px;
     height: 70px;
 }
 
-footer #icon-twitter {
+#icon-twitter {
     width: 80px;
     height: 80px;
 }
@@ -102,7 +145,6 @@ footer .contact {
     display: inline-block;
     font-size: 16px;
 
-    /* font2 */
     font-family: 'Quicksand', sans-serif;
     /* font-family: 'Zeyada', cursive; */
     font-weight: 100;

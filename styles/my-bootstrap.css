@@ -72,7 +72,7 @@
 
     margin: 30px;
     /* border: 2px solid black; */
-    border-radius: 30px;
+    /* border-radius: 30px; */
     transition: 700ms ease;
 }
 
@@ -147,5 +147,12 @@
     background-color: black;
 }
 
+
+/* ================================================== */
+/* cart icon */
+.bi-cart {
+    width: 40px;
+    height: 40px;
+}
 
 /* ================================================== */

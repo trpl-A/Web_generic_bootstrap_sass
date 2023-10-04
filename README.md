@@ -5,11 +5,11 @@
     * also using bootstrap and SASS
     * based on project from college; year1
 
-- Creator:      trpl-A
+- Developer:    trpl-A
 - Started:      02.05.23 
-- Updated:      29.09.23
+- Updated:      04.10.23
 - Status:       
-    * work-in-progress
+    * COMPLETE
     * connected to github? yes
     * using git? yes
 ---
@@ -25,19 +25,7 @@
 - Secondary
     * aqua/ light blue
     * light grey
-    * brown, olive
-
-- Custom google fonts
-    * font1, main font
-        + 'Zeyada'
-        + a cursive decorative font
-        +  chose this font because it's a playful and decorative font.
-            - Just like how cakes and confectionary can be decorative
-
-    * font2
-        + 'Quicksand', (for headers)
-        + a sans-serif font
-        + chose this font because it is more appealing that the default sans-serif fonts
+    * brown, oliver
 ---------------------------
 
 ### Webpages

@@ -9,7 +9,7 @@
     <title>Nkwali Yenkosi</title>
     <base target="_blank">
     <!-- started: 02.05.23 -->
-    <!-- updated: 03.10.23 -->
+    <!-- updated: 04.10.23 -->
     <!-- created by trpl-A -->
 
     <!-- favicon -->
@@ -46,36 +46,7 @@
     <!-- ================================================== -->
 
     <!-- my-script -->
-    <script>
-        function checkNetworkStatus() {
-            var online = navigator.onLine;
-            if (!online) {
-                window.location.href = '404.html'; // Redirect to the 404 error page
-            }
-
-            else {
-                console.log("online")
-                console.log(online)
-            }
-        }
-
-        // function openGoogle() {
-        //     var online = navigator.onLine;
-        //     if (!online) {
-        //         window.location.href = '404.html'; // Redirect to the 404 error page
-        //     }
-
-        //     else {
-        //         window.open("https://www.google.com")
-        //         console.log("online")
-        //         console.log(online)
-        //     }
-        // }
-
-
-        window.addEventListener('load', checkNetworkStatus);
-        // window.addEventListener('load', openGoogle);
-    </script>
+    <script src="scripts/scriptIsOnline.js"></script>
 </head>
 
 <body>
@@ -83,6 +54,26 @@
     <nav class="navbar navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Nkwali Yenkosi</a>
+            <!-- 
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img id="icon-ig" class="icons" src="./icons/socials/ig.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" https://www.facebook.com" target="_blank">
+                            <img class="icons" src="./icons/socials/fb.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com" target="_blank">
+                            <img id="icon-twitter" class="icons" src="./icons/socials/twitter.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -275,7 +266,6 @@
                         <img class="icons" src="./icons/socials/tk.png" alt="">
                     </a>
                 </li>
-                <!-- twitter -->
                 <li>
                     <a href="https://www.tiktok.com" target="_blank">
                         <img id="icon-twitter" class="icons" src="./icons/socials/twitter.png" alt="">

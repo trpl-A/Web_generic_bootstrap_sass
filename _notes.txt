@@ -14,16 +14,9 @@ add some bs components (modals, alerts, use a placeholder for card, skeleton, to
 maybe create a cordova app based on/from this project
 ---
 
-once buy btn is clicked, open a small window with inputs (300x300), number input, display subtotal
+use square icons for socials
 ---
 
-add screenshots to documentation folder
-add more docs to documentation folder 
----
-
-complete
-index, about, terms of service, checkout (design and functionality)
----
 
 
 bs

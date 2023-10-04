@@ -24,8 +24,18 @@
 }
 
 /* social media icons */
+.social-media {
+    position: relative;
+    left: -8vw;
+    padding-left: 5vw;
+}
+
 .social-media li {
     display: inline;
+}
+
+.social-media ul {
+    padding: 0;
 }
 
 .icons {
