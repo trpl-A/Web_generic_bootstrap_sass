@@ -44,11 +44,11 @@
 }
 
 
-.card-group {
-    /* background-color: yellow;  */
-    margin-bottom: 30px;
-    /* box-shadow: 1px 1px 10px yellow; */
+/* .card-group {
+    /* background-color: yellow;  
+    margin-bottom: 30px; 
 }
+*/
 
 /* .card-group:hover {
     box-shadow: 1px 1px 10px yellow;
@@ -66,11 +66,16 @@
 }
 
 .card {
-    box-shadow: 1px 1px 10px black;
+    /* box-shadow: 1px 1px 10px black; */
     background-color: white;
     color: black;
 
-    margin: 30px;
+    margin: 7vh 30px;
+    /* margin: 50px 30px; */
+    /* padding: 10px; */
+    border: none;
+    border-radius: 0px;
+
     /* border: 2px solid black; */
     /* border-radius: 30px; */
     transition: 700ms ease;

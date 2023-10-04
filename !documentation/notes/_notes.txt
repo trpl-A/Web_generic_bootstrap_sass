@@ -1,10 +1,5 @@
 use heroku? to host the app 
 
-Mozart - Requiem
-https://www.youtube.com/watch?v=Zi8vJ_lMxQI
-https://www.youtube.com/watch?v=ZNwz6wj1yRs
-
-
 add validation to form
 add calculations to form
 add a way of storing the data from the form 
@@ -17,8 +12,6 @@ maybe create a cordova app based on/from this project
 use square icons for socials
 ---
 
-
-
 bs
 - use bs modals
 - use carousel
@@ -30,5 +23,6 @@ bs
 - use a placeholder for card, skeleton
 - toasts
 - tooltip
+---
 
 <end>
