@@ -1,0 +1,22 @@
+{
+    "basic_user_info": {
+        "username": "user",
+        "email": "e",
+        "phone_number": "p"
+    },
+    "shipping_info": {
+        "country": "c",
+        "provice__state": "p",
+        "city": "cy",
+        "suburban_area": "sa",
+        "full_address": "a",
+        "special_instructions": "..."
+    },
+    "billing_details": {
+        "card_holder": "ch",
+        "card_num": 1,
+        "expire_date": "ed",
+        "cvv": "cvv"
+    },
+    "confirmation": false
+}
