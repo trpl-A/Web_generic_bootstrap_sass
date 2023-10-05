@@ -80,8 +80,10 @@
                 aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
                     <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nkwali Yenkosi</h5> -->
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+
+                    <!-- X button -->
+                    <!-- <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button> -->
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -112,38 +114,12 @@
     </header>
 
     <!-- Button trigger modal -->
-    <script>
-        let itemName
-
-        const items = {}
-
-        function setItem(inItem) {
-            itemName = inItem
-        }
-        function getItem() {
-            return itemName
-        }
-
-
-        function addToCart() {
-            let quantity = document.getElementById("qty")
-            quantity.innerText = ""
-            items[getItem()] = Number.parseInt(quantity.value)
-
-            // display 
-            console.log(quantity.value)
-            window.alert("Item added to cart")
-            console.log(items)
-            // console.log(getItem())
-        }
-    </script>
-
     <!-- btn btn-primary -->
     <!-- <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Buy product
     </button> -->
 
-    <!-- Modal -->
+    <!-- Modal, for buying -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -158,8 +134,27 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" onclick="addToCart()" class="btn btn-primary" data-bs-dismiss="modal">Add to
+                    <!-- data-bs-dismiss="modal" -->
+                    <button type="button" onclick="addToCart()" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#modalSubtotal">Add to
                         cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal, for displaying subtotal-->
+    <div class="modal fade" id="modalSubtotal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Item added to cart</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p id="updatePrice">Testing</p>
                 </div>
             </div>
         </div>
@@ -183,8 +178,8 @@
                         <h5 class="card-title">Bag 1</h5>
                         <p class="card-text">R 2 000</p>
                         <div class="center">
-                            <button onclick="setItem('item1')" type="button" class="cart-btn" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                            <button onclick="setItem('item1'), setPrice(2000), testing()" type="button" class="cart-btn"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-cart" viewBox="0 0 16 16">
@@ -205,8 +200,8 @@
                         <p class="card-text">R 2 500</p>
                         <!-- button -->
                         <div class="center">
-                            <button onclick="setItem('item2')" type="button" class="" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                            <button onclick="setItem('item2'), setPrice(2500)" type="button" class=""
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-cart" viewBox="0 0 16 16">
@@ -223,11 +218,11 @@
                     <img src="./styles/images/bag (2).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Bag 3</h5>
-                        <p class="card-text">R 2 000</p>
+                        <p class="card-text">R 2 100</p>
                         <!-- button -->
                         <div class="center">
-                            <button onclick="setItem('item3')" type="button" class="" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                            <button onclick="setItem('item3'), setPrice(2100)" type="button" class=""
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-cart" viewBox="0 0 16 16">
@@ -252,8 +247,8 @@
                         <h5 class="card-title">Jacket 1</h5>
                         <p class="card-text">R 2 300</p>
                         <div class="center">
-                            <button onclick="setItem('item4')" type="button" class="" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                            <button onclick="setItem('item4'), setPrice(2300)" type="button" class=""
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-cart" viewBox="0 0 16 16">
@@ -272,8 +267,8 @@
                         <h5 class="card-title">Jacket 2</h5>
                         <p class="card-text">R 3 000</p>
                         <div class="center">
-                            <button onclick="setItem('item5')" type="button" class="" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                            <button onclick="setItem('item5'), setPrice(3000)" type="button" class=""
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-cart" viewBox="0 0 16 16">
@@ -290,10 +285,10 @@
                     <img src="./styles/images/jacket (6).png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Jacket 3</h5>
-                        <p class="card-text">R 2 350</p>
+                        <p class="card-text">R 2 400</p>
                         <div class="center">
-                            <button onclick="setItem('item6')" type="button" class="" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                            <button onclick="setItem('item6'), setPrice(2400)" type="button" class=""
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-cart" viewBox="0 0 16 16">
@@ -317,8 +312,8 @@
                         <h5 class="card-title">Jacket 4</h5>
                         <p class="card-text">R 2 300</p>
                         <div class="center">
-                            <button onclick="setItem('item7')" type="button" class="" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                            <button onclick="setItem('item7'), setPrice(2300)" type="button" class=""
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-cart" viewBox="0 0 16 16">
@@ -337,8 +332,8 @@
                         <h5 class="card-title">Jacket 5</h5>
                         <p class="card-text">R 3 000</p>
                         <div class="center">
-                            <button onclick="setItem('item8')" type="button" class="" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                            <button onclick="setItem('item8'), setPrice(3000)" type="button" class=""
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-cart" viewBox="0 0 16 16">
@@ -357,8 +352,8 @@
                         <h5 class="card-title">Jacket 6</h5>
                         <p class="card-text">R 2 500</p>
                         <div class="center">
-                            <button onclick="setItem('item9')" type="button" class="" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
+                            <button onclick="setItem('item9'), setPrice(2500)" type="button" class=""
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-cart" viewBox="0 0 16 16">
@@ -376,6 +371,14 @@
             <a id="go-to-checkout" class="center" href="./checkout.html">
                 <button>Go to checkout page</button>
             </a>
+        </section>
+
+        <section class="center">
+            <div>
+                <button onclick="displayTotal()">Show total Cost</button>
+
+                <p id="showTotal"></p>
+            </div>
         </section>
     </main>
 
@@ -399,5 +402,33 @@
         </div>
     </footer>
 </body>
+
+<!-- my-script -->
+<script src="scripts/scriptBuy.js"></script>
+<script>
+    // let itemName
+
+    // const items = {}
+
+    // function setItem(inItem) {
+    //     itemName = inItem
+    // }
+    // function getItem() {
+    //     return itemName
+    // }
+
+
+    // function addToCart() {
+    //     let quantity = document.getElementById("qty")
+    //     quantity.innerText = ""
+    //     items[getItem()] = Number.parseInt(quantity.value)
+
+    //     // display
+    //     console.log(quantity.value)
+    //     window.alert("Item added to cart")
+    //     console.log(items)
+    //     // console.log(getItem())
+    // }
+</script>
 
 </html>

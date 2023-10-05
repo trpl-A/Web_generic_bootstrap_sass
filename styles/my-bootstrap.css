@@ -148,9 +148,25 @@
 /* modal-btn */
 
 /* modal */
-.modal-body {
-    background-color: black;
+.modal-content {
+    /* background-color: olive; */
+    /* color: white; */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
 }
+
+/* .modal-header {
+    font-family: 'Quicksand', sans-serif;
+} */
+
+/* 
+.modal-footer {
+    background-color: black;
+}  */
+
+/* .modal-body {
+    background-color: black;
+} */
 
 
 /* ================================================== */

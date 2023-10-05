@@ -53,8 +53,8 @@ main img {
 /* ========================================== */
 
 /* modal input */
-#qty {
-    color: orange;
+#qty::placeholder {
+    color: black;
 }
 
 /* ========================================== */

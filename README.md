@@ -7,7 +7,7 @@
 
 - Developer:    trpl-A
 - Started:      02.05.23 
-- Updated:      04.10.23
+- Updated:      05.10.23
 - Status:       
     * COMPLETE
     * connected to github? yes
@@ -41,5 +41,8 @@
         * checkout.html
         * terms-of-service.html
         * thank-you.html
+---------------------------
+
+![#page-home1](https://github.com/trpl-A/Web_generic_bootstrap_sass/assets/126344248/547f5e30-bb65-49a6-911c-db0b85ca8943)
 ---------------------------
 <end>

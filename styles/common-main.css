@@ -27,7 +27,6 @@ nav {
 
     position: sticky;
     top: 0;
-    /* z-index: 100; */
     --max-z-index: 100;
     z-index: var(--max-z-index);
 }
@@ -207,7 +206,7 @@ textarea:focus {
 /* .my-button */
 button {
     border: none;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0;
     font-size: 20px;
 
